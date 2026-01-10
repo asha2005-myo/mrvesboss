@@ -171,12 +171,12 @@
 
         <div class="section">
             <h2>💳 Payment</h2>
-            <div class="pay-box">
+            <<div class="pay-box">
     MK <br> 📱 KBZ Pay <br>
     📞 <span class="phone">09-450378460</span><br>
     <button class="copy-btn" onclick="copyPhone(this)">📋 Copy Phone</button>
 </div>
-           <div class="pay-box">
+          <div class="pay-box">
     KH <br> 📱 Wave Pay <br>
     📞 <span class="phone">09-789845613</span><br>
     <button class="copy-btn" onclick="copyPhone(this)">📋 Copy Phone</button>
@@ -191,7 +191,7 @@
     </div>
 
     <script>
-       function copyPhone(btn) {
+function copyPhone(btn) {
     const phone = btn.previousElementSibling.innerText;
     navigator.clipboard.writeText(phone).then(() => {
         alert("📞 Phone number copied: " + phone);
